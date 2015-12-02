@@ -1,10 +1,10 @@
-# Development and Test environment configurations are listed here
-# for convenience but generally shouldn't be used.
-# 
-# Replace YOUR_APP with the heroku app name and YOUR_TOKEN with the
-# same token used in private_pub.yml of your rails project.
-
+development:
+  server: "http://localhost:9292/faye"
+  secret_token: "secret"
+test:
+  server: "http://localhost:9292/faye"
+  secret_token: "secret"
 production:
-  server: "http://ramfayeserver.herokuapp.com/faye"
-  secret_token: "batkaro"
-  signature_expiration: 86400 # one day
+  server: "http://example.com/faye"
+  secret_token: "ba7faa2ca54a57287cd26c313a02da22520e6e2d6e218bdfec6ebb187e0f0ba7"
+  signature_expiration: 3600 # one hour
